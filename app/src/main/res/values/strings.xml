@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">F2C</string>
+    <string name="f2c">F2C</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="street_address">Street Address</string>
+    <string name="district">District</string>
+    <string name="province">Province</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save and Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="review">What do you think about this application?</string>
+    <string name="email">Email</string>
+    <string name="addReview">Enter your review</string>
+    <string name="submit2">Submit</string>
+    <string name="cancel2">Cancel</string>
+    <string name="text1">Enjoying F2C?</string>
+    <string name="rate">"Rate our application "</string>
+    <string name="rating">Rate our Application</string>
+    <string name="review1">alexa271@gmail.com</string>
+    <string name="review2">johnsilver@yahoo.com</string>
+    <string name="review3">krishnabhala@gmail.com</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="message"></string>
+    <string name="submit3">Submit</string>
+    <string name="not_now">Not Now</string>
+    <string name="papaya">Papaya</string>
+    <string name="order">Order Now</string>
+    <string name="add">Add Review</string>
+    <string name="cart">Add to cart</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "120978146877",
+    "project_id": "f2cproject-73aed",
+    "storage_bucket": "f2cproject-73aed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120978146877:android:f67449bb2e52ac6355cc54",
+        "android_client_info": {
+          "package_name": "com.example.f2c"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120978146877-m0g02v91gripdt280nf20ccgf4ia0g2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL9Ml98EgWuespnIEPkN45sDpe1Nn3Q4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120978146877-m0g02v91gripdt280nf20ccgf4ia0g2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

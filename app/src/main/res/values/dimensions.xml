@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="maintextwidth">130dp</dimen>
+    <dimen name="maintextheight">62dp</dimen>
+    <dimen name="maintextsize">34sp</dimen>
+    <dimen name="mainimgwidth">131dp</dimen>
+    <dimen name="mainimgheight">181dp</dimen>
+    <dimen name="mainbtnwidth">151dp</dimen>
+    <dimen name="mainbtnheight">55dp</dimen>
+    <dimen name="reviewbtnwidth">106dp</dimen>
+    <dimen name="reviewbtnheight">58dp</dimen>
+    <dimen name="displaybtnwidth">100dp</dimen>
+    <dimen name="displaybtnheight">48dp</dimen>
+    <dimen name="displayimgwidth">66dp</dimen>
+    <dimen name="displayimgheight">66dp</dimen>
+</resources>
