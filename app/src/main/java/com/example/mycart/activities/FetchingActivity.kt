@@ -1,4 +1,4 @@
-package com.example.mycart
+package com.example.mycart.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mycart.R
+import com.example.mycart.adapter.CartAdapter
+import com.example.mycart.model.CartModel
 import com.google.firebase.database.*
 
 class FetchingActivity : AppCompatActivity() {
@@ -16,6 +19,7 @@ class FetchingActivity : AppCompatActivity() {
     private lateinit var cartList: ArrayList<CartModel>
     private lateinit var dbRef: DatabaseReference
 
+    //getting all the items in the cart
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fetching)

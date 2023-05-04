@@ -1,15 +1,17 @@
-package com.example.mycart
+package com.example.mycart.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mycart.model.CartModel
+import com.example.mycart.R
 
 class CartAdapter(private val cartList: ArrayList<CartModel>) :
     RecyclerView.Adapter<CartAdapter.ViewHolder>() {
 
-    private lateinit var mListener:onItemClickListener
+    private lateinit var mListener: onItemClickListener
 
     interface onItemClickListener{
         fun onItemClick(position: Int)

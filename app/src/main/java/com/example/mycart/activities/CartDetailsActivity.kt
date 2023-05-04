@@ -1,4 +1,4 @@
-package com.example.mycart
+package com.example.mycart.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mycart.model.CartModel
+import com.example.mycart.R
 import com.google.firebase.database.FirebaseDatabase
 
 class CartDetailsActivity : AppCompatActivity() {
@@ -27,6 +29,7 @@ class CartDetailsActivity : AppCompatActivity() {
         initView()
         setValuesToViews()
 
+        //update function call
         btnUpdate.setOnClickListener {
             openUpdateDialog(
                 intent.getStringExtra("cartId").toString(),
@@ -34,6 +37,7 @@ class CartDetailsActivity : AppCompatActivity() {
             )
         }
 
+        //delete function call
         btnDelete.setOnClickListener {
             deleteRecord(
                 intent.getStringExtra("cartId").toString()
@@ -52,6 +56,8 @@ class CartDetailsActivity : AppCompatActivity() {
         btnDelete = findViewById(R.id.btnDelete)
     }
 
+
+   //default get the values from database
     private fun setValuesToViews() {
         tvCartId.text = intent.getStringExtra("cartId")
         tvCartName.text = intent.getStringExtra("cartName")
@@ -60,12 +66,14 @@ class CartDetailsActivity : AppCompatActivity() {
 
     }
 
+    //delete recode from the database
     private fun deleteRecord(
         id: String
     ){
         val dbRef = FirebaseDatabase.getInstance().getReference("Cart").child(id)
         val mTask = dbRef.removeValue()
 
+        //getting item delete message
         mTask.addOnSuccessListener {
             Toast.makeText(this, "Item data deleted", Toast.LENGTH_LONG).show()
 
@@ -77,6 +85,8 @@ class CartDetailsActivity : AppCompatActivity() {
         }
     }
 
+
+    //getting the item report by id
     private fun openUpdateDialog(
         cartId: String,
         cartName: String
@@ -110,6 +120,7 @@ class CartDetailsActivity : AppCompatActivity() {
                 etCartDelivery.text.toString()
             )
 
+            //getting updated message
             Toast.makeText(applicationContext, "Item Data Updated", Toast.LENGTH_LONG).show()
 
             //we are setting updated data to our textviews
@@ -121,6 +132,7 @@ class CartDetailsActivity : AppCompatActivity() {
         }
     }
 
+    //update recode from the database
     private fun updateCartData(
         id: String,
         name: String,

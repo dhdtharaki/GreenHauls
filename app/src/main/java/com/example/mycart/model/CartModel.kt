@@ -1,6 +1,8 @@
-package com.example.mycart
+package com.example.mycart.model
 
-data class CartModel(
+
+//initializing data
+ data class CartModel(
     var cartId: String? = null,
     var cartName: String? = null,
     var cartQuantity: String? = null,

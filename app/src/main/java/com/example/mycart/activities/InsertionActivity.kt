@@ -1,10 +1,12 @@
-package com.example.mycart
+package com.example.mycart.activities
 
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mycart.R
+import com.example.mycart.model.CartModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -26,8 +28,10 @@ class InsertionActivity : AppCompatActivity() {
         etCartDelivery = findViewById(R.id.etCartDelivery)
         btnSaveData = findViewById(R.id.btnSave)
 
+        //database path
         dbRef = FirebaseDatabase.getInstance().getReference("Cart")
 
+        //save data in the database after press the button
         btnSaveData.setOnClickListener {
             saveCartData()
         }
@@ -35,11 +39,12 @@ class InsertionActivity : AppCompatActivity() {
 
     private fun saveCartData() {
 
-        //getting values
+        //getting values from the customer
         val cartName = etCartName.text.toString()
         val cartQuantity = etCartQuantity.text.toString()
         val cartDelivery =  etCartDelivery.text.toString()
 
+        //when the form is empty display error messages
         if (cartName.isEmpty()) {
             etCartName.error = "Please enter item name"
         }

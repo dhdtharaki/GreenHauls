@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".InsertionActivity">
+    tools:context=".activities.InsertionActivity">
 
     <EditText
         android:id="@+id/etCartName"
