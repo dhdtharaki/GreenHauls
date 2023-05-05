@@ -20,6 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
     <Button
         android:id="@+id/btnInsertData"
         android:layout_width="350dp"
@@ -39,21 +41,35 @@
         android:id="@+id/btnFetchData"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#9DC209"
         android:text="All Sellers"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:backgroundTint="#9DC209"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInsertData" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFetchData"
+        android:layout_marginTop="20dp"
+        android:textColor="#9DC209"
+        android:text="Count of sellers: 0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFetchData" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="317dp"
         android:layout_height="206dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/top" />
